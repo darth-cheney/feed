@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Feed Items</title>
+        <meta charset="utf8">
+    </head>
+    <body>
+        {{#each items}}
+            <dl>
+              {{#each this}}
+                  <dt>{{@key}}</dt>
+                  <dd>{{this}}</dd>
+              {{/each}}
+            </dl>
+        {{/each}}
+    </body>
+</html>
